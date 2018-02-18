@@ -1,0 +1,14 @@
+{
+  "name": "nfq-uzduotis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass assets/scss/main.scss assets/css/styles.css -w"
+  },
+  "author": "Martynas Druteika",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

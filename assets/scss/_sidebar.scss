@@ -1,0 +1,30 @@
+.sidebar {
+  padding-right: 1.5rem;
+
+    &__categories {
+
+      &--list {
+        list-style: none;
+
+        .categories-filter {
+          display: block;
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+          padding: .3rem;
+          color: $color-secondary;
+          text-decoration: none;
+          padding: 1rem;
+          min-height: 4.2rem;
+        }
+
+        .active {
+          background-color: $color-primary;
+          color: white;
+        }
+      }
+    }
+
+  @include respond(phone) {
+    display: none;
+  }
+}

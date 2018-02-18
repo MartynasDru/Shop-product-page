@@ -1,0 +1,108 @@
+.main-section__products {
+  margin: 2rem 0;
+
+  .product {
+      height: 60rem;
+
+      @include respond(tab-land) {
+        width: 33.3%;
+      }
+
+      @include respond(phone) {
+        width: 50%;
+      }
+
+    .product-content {
+      margin: 1rem;
+      height: 100%;
+      transition: all .4s;
+      border: 1px solid white;
+
+      &:hover {
+        border: 1px solid rgba(0, 0, 0, 0.15);
+
+        @include respond(phone) {
+          border: 1px solid white;
+        }
+      }
+
+      .product-image {
+        max-width: 21.8rem;
+        max-height: 25rem;
+        margin: 0 auto;
+
+        img {
+          max-width: 21.8rem;
+          max-height: 25rem;
+        }
+      }
+
+      .product-details {
+        padding: 3rem;
+        color:$color-secondary;
+
+        &--list {
+          list-style: none;
+          text-align: center;
+
+          li {
+            padding: 1rem;
+            font-size: 1.5rem;
+            transition: all .4s;
+
+            &:not(:last-child) {
+              border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            }
+
+          }
+
+          .product-name {
+            font-size: 1.9rem;
+
+            &:hover {
+              color: $color-primary;
+            }
+          }
+
+          .price {
+            font-size: 1.8rem;
+            color: $color-primary;
+          }
+        }
+
+        &--buttons {
+          text-align: center;
+
+          .product-btn {
+            font-size: 2.2rem;
+            padding: .5rem;
+            border-radius: 5rem;
+            text-align: center;
+            transition: all .4s;
+            color: $color-primary;
+
+            &:hover {
+              color: $color-secondary;
+            }
+
+            &:visited,
+            &:link {
+              text-decoration: none;
+            }
+
+          }
+
+          .fa-heart {
+            color: $color-secondary;
+            font-size: 1.6rem;
+            transition: .2s all;
+
+            &:hover {
+              color: $color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

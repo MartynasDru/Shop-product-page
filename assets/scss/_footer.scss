@@ -1,0 +1,119 @@
+.footer {
+  background-color: $color-header-footer;
+  padding: 5rem 0;
+  font-size: 1.5rem;
+
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: underline;
+
+    @include respond(tab-land) {
+      display: none;
+    }
+  }
+
+  &__brand {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .brand-logo {
+        height: 10rem;
+  }
+
+  &__navigation {
+    text-align: center;
+
+    &--categories {
+      list-style: none;
+
+      .category {
+
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+
+        a {
+          color: white;
+
+        }
+      }
+
+    }
+
+  }
+
+  &__social-media {
+    text-align: center;
+
+    &--icons {
+      list-style: none;
+
+      li {
+        display: inline-block;
+
+        &:not(:last-child) {
+          margin-right: 2.5rem;
+        }
+
+        a {
+          font-size: 3rem;
+
+          @include respond(phone) {
+            font-size: 2rem;
+          }
+        }
+
+        .fa-facebook-f {
+          color: #3B5998;
+        }
+
+        .fa-twitter {
+          color: #1dcaff;
+        }
+
+        .fa-linkedin-in {
+          color: #0077B5;
+        }
+
+        .fa-google-plus-g {
+          color: #CE3C2D;
+        }
+
+      }
+    }
+
+  }
+
+
+  &__contacts {
+    text-align: center;
+
+    &--list {
+      list-style: none;
+
+      li {
+
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+
+        }
+
+        i {
+          margin-right: .5rem;
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+
+      }
+    }
+
+
+  }
+}

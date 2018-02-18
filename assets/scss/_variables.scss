@@ -1,0 +1,35 @@
+// grid
+$grid-width: 120rem;
+
+//Colors
+
+$color-primary: rgba(30,202,204, .8);
+$color-secondary: #777;
+$color-header-footer: #333;
+$color-grey-light: #F0F0E9;
+
+// Mixins
+
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 48em) {@content}; //768px
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {@content}; //900px
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {@content}; //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {@content}; //1800px+
+  }
+}
